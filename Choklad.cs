@@ -30,11 +30,11 @@ namespace Tårta
         public double GenomsnittligtPris(Choklad[] c, int n)
         {
             int i;
-            double prosek = 0.0;
+            double medelPris = 0.0;
             for (i = 0; i < n; i++)
-                prosek += c[i].FörsäljningPris();
-            prosek /= n;
-            return prosek;
+                medelPris += c[i].FörsäljningPris();
+            medelPris /= n;
+            return medelPris;
         }
 
         public double MinPris(Choklad[] c, int n)
